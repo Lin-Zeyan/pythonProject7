@@ -18,7 +18,7 @@ class App(tk.Frame):
         w = Canvas(root, width=500, height=20)
         w.pack()
 
-        Label(root, text='⭐手写数字识别系统使用说明⭐').pack(side=TOP)
+        Label(root, text='手写数字识别系统使用说明').pack(side=TOP)
         Label(root, text='1、点击生成手写图片按钮，键盘按"M"切换到手写状态，点击鼠标左键，进行手写操作。').pack(side=TOP, anchor=W)
         Label(root, text='2、摁下"w"进行截图，点击鼠标左键，选择截取数字区域,按"q"退出').pack(side=TOP, anchor=W)
         Label(root, text='3、点击刷新按钮，回显截图').pack(side=TOP, anchor=W)
