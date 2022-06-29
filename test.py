@@ -36,10 +36,7 @@ def get_mnist_data():
     x_train = x_train / 255
     x_val = x_val / 255
     x_test = x_test / 255
-    # 打印数据集传入网络的尺寸
-    print('训练集传入网络的图像尺寸：', x_train.shape)
-    print('验证集传入网络的图像尺寸：', x_val.shape)
-    print('测试集传入网络的图像尺寸：', x_test.shape)
+
 
     # 图像标签一共有10个类别即0-9，这里将其转化为独热编码（One-hot）向量
     y_train = np_utils.to_categorical(y_train)
