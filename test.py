@@ -25,7 +25,6 @@ def get_mnist_data():
     # 原始数据量可视化
     print('训练集图像的尺寸：', x_train_original.shape)
     print('训练集标签的尺寸：', y_train_original.shape)
-    print('测试集图像的尺寸：', x_test_original.shape)
 
     # 将图像转换为四维矩阵(nums,rows,cols,channels), 这里把数据从unint8类型转化为float32类型, 提高训练精度。
     x_train = x_train.reshape(x_train.shape[0], 28, 28, 1).astype('float32')
