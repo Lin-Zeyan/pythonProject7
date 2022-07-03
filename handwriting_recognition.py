@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 """
-Based on CNN neural network, training handwritten numeral recognition model model.h5.
+Based on CNN neural  network, training handwritten numeral recognition model model.h5.
 The class refers to the trained model for handwritten numeral recognition
 """
 import numpy as np
