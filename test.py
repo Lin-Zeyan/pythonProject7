@@ -118,6 +118,10 @@ show_train_history(train_history, 'loss', 'val_loss')
 score = model.evaluate(x_test, y_test)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
+test_pred_t = model.predict(x_train)
+test_label_t = np.argmax(y_train, axis=1)
+test_pred_t = np.argmax(test_pred_t,axis=1)
+print("Test Recall:", recall_score(test_label_t,test_pred_t,average='macro'))
 
 # 测试集结果预测
 # 通过model.predict()对测试集图像进行预测
